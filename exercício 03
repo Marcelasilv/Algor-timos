@@ -1,0 +1,32 @@
+// Faça um programa que receba o salário bruto de um funcionário e, usando a tabela a seguir, calcule e mostre o valor a receber. 
+// Sabe-se que este é composto pelo salário bruto acrescido de gratificação e descontado o imposto de 7% sobre o salário.
+ 
+Var
+   salarioBruto, salarioFinal, gratificacao, salarioComDesconto, desconto: real
+ 
+Inicio
+   escreval("Digite o salario bruto: ")
+   leia(salarioBruto)
+ 
+   se (salarioBruto <= 350) entao
+      gratificacao <- (salarioBruto + 100)
+   senao
+        se (salarioBruto<=600) entao
+           gratificacao <- (salarioBruto + 75)
+        senao
+             se (salarioBruto<=900) entao
+               gratificacao <- (salarioBruto + 50)
+             senao
+               gratificacao <- (salarioBruto + 35)
+             fimse
+         fimse
+   fimse
+ 
+   desconto <- (salarioBruto * 0.7)
+   salarioComDesconto <- (salarioBruto - desconto)
+   salarioFinal <- (salarioComDesconto + gratificacao)
+   
+   escreval("Salario Bruto: ", salarioBruto)
+   escreval("Desconto: ", desconto)
+   escreval("Gratificação: ", gratificacao)
+   escreval("Salario Final: ", salarioFinal)
