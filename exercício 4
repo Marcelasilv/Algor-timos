@@ -1,0 +1,24 @@
+// Faça um programa que leia um conjunto não determinado de valores e
+// mostre o valor lido, seu quadrado, seu cubo e sua raiz quadrada.
+// Finalize a entrada de dados com um valor negativo ou zero.
+ 
+Var
+   num: inteiro
+   quadrado, cubo, raizQuadrada : real
+   
+Inicio
+ 
+     escreval("Digite o número de iterações que deseja: ")
+     leia(num)
+       
+      enquanto(num>0)faça
+         quadrado <- numero * numero
+         escreval(quadrado)
+         
+         cubo <- exp (numero, 3)
+         escreval(numero)
+         
+         escreval(RaizQ(numero)
+         
+         escreval("Digite o número de iterações que deseja ou zero para sair: ")
+         leia(num)
