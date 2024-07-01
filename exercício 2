@@ -1,0 +1,54 @@
+// Faça um programa que receba a idade e o peso de uma pessoa. De acordo com a tabela a seguir, verifique e mostre em qual grupo de
+// risco essa pessoa se encaixa.
+ 
+Var
+   idade, risco : inteiro
+   peso : real
+ 
+Inicio
+   escreval("Digite o peso: ")
+   leia(peso)
+   
+   escreval("Digite a idade: ")
+   leia(idade)
+   
+   se (idade<20) entao
+ 
+      se (peso<60) entao
+          risco <- 9
+      senao
+         se (peso<=90) entao
+            risco <- 8
+         senao
+            risco <- 7
+         fimse
+      fimse
+      
+   senao
+        se (idade<=50) entao
+ 
+            se (peso<60) entao
+               risco <- 6
+            senao
+               se (peso<=90) entao
+                   risco <- 5
+               senao
+                   risco <- 4
+               fimse
+            fimse
+        
+        senao
+            se (peso<60) entao
+               risco <- 3
+            senao
+               se (peso<=90) entao
+                    risco <- 2
+               senao
+                    risco <- 1
+               fimse
+            fimse
+   fimse
+   
+   escreval("Idade: ", idade)
+   escreval("Peso: ", peso)
+   escreval("Grupo de risco: ", risco)
